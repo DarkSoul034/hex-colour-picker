@@ -35,8 +35,10 @@ function updateColor(color) {
   var total = (parseInt(($("#rSlider").val()), 10) + parseInt(($("#gSlider").val()), 10) + parseInt(($("#bSlider").val()), 10));
   if (total < 380) {
     document.getElementById("hexValue").style = "color: #ffffff";
+    document.getElementById("rgbValue").style = "color: #ffffff";
   } else if (total > 380) {
      document.getElementById("hexValue").style = "color: #000000";
+     document.getElementById("rgbValue").style = "color: #000000";
   }
   
 }
