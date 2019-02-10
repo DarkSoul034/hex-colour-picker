@@ -1,0 +1,55 @@
+/* Style the text */
+h2 {
+  margin-left: 30px;
+  color: #000000; 
+}
+
+input[type="range"] {
+  width: 250px;
+}
+
+/* Make three columns if possible */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Stop anything from being weird after the three columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* For desktop */
+@media only screen and (min-width: 751px) {
+  .row {
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    font-family: Courier New, Courier;
+  }
+}
+
+/* For regular sized mobile devices */
+@media screen and (max-width: 750px) {
+  .column {
+    width: 100%;
+  }
+  .row {
+      width: 100%;
+      font-family: Courier New, Courier;
+  }
+}
+
+/* For larger mobile devices */
+@media screen and (max-width: 1080px) {
+  .column {
+    width: 100%;
+  }
+  .row {
+      width: 90%;
+      margin: auto;
+      font-family: Courier New, Courier;
+  }
+}
